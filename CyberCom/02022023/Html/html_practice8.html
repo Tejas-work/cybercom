@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html_practice8</title>
+    <link rel="stylesheet" href="../css/html_practice8.css">
+</head>
+<body>
+ 
+    <form id="myform"  >
+        <span id="msg"></span>
+        <table>
+            <tr >
+                <th colspan="2" >Personal Information</th>
+            </tr>
+            <tr>
+                <td class="label" >
+                    Frist name
+                </td>
+                <td class="field">
+                    
+                    <input type="text" name="fn" required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Last name
+                </td>
+                <td class="field" >
+                    
+                    <input type="text" name="ln" required>
+                </td>
+            </tr>
+
+          
+            <tr>
+                <td class="label">
+                    Date of birth
+                </td>
+                <td > 
+                  <input type="date">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Gender:
+                </td>
+                <td class="field">
+                    <select name="" id="">
+                        <option value="" name="gender" selected>choose Gender</option>
+                        <option value="male">male</option>
+                        <option value="female">female</option>
+                    </select>
+                </td>
+            </tr>
+
+
+
+
+
+
+
+            <tr>
+                <th colspan="2" >Account Information</th>
+            </tr>
+            <tr>
+                <td class="label" required>
+                    Email
+                </td>
+                <td class="field"> 
+                    <input type="email" name="email" id="email"><br>
+                    <span>
+                        (Your email address will be your username)
+                    </span>
+                </td>
+                
+            </tr>
+            <tr >
+                <td class="label">Re-type email</td>
+                <td class="field"  required>
+                    <input type="email" id="reEmail">
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Password
+                </td>
+                <td class="field" >
+                    <input type="password" name="password" id="password" min="8" required><br>
+                    <span>(Min 8 character, 1 number, case sensitive)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                   Re-type Password
+                </td>
+                <td class="field">
+                    <input type="password" id="rePassword"  required>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Security Question:
+                </td class="field">
+                <td>
+                    <select name="sq" id="">
+                        <option value="choose Security Question">choose Security Question</option>
+                        <option value="whatever">whatever</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td class="label"> security answer:</td>
+                <td class="field"><input name="sans"  type="text" required><br>
+                <span>(Not case sensitive)</span></td>
+            </tr>
+            
+
+
+
+
+            <tr>
+                <th colspan="2" >contact information</th>
+            </tr>
+
+            <tr>
+                <td class="label">
+                    Address:
+                </td>
+                <td class="field">
+                    <input type="text" name="address" id="" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="label">
+                    City
+                </td>
+                <td class="field">
+                    <input type="text" name="" id="" required>
+                </td>
+
+            </tr>
+            <tr>
+                <td class="label">
+                    State
+                </td>
+                <td class="field">
+                    <select name="state" id="">
+                        <option value="Goa">Goa</option>
+                        <option value="Delhi">Delhi</option>
+                        <option value="Gujarat">Gujarat</option>
+                    </select>
+                </td>
+
+
+            </tr>
+            <tr>
+                <td class="label">
+                    Zip code:
+                </td>
+                <td>
+                    <input type="text" name="zipCode" max="6" min="6" ><span id="opt">(optional)</span>
+                </td>
+            </tr>
+            <tr>
+                <td class="label">
+                    Phone:
+                </td>
+                <td>
+                    <input type="text" name="phone" max="10" min="10" required id="phone"><select name="" id=""><option value="">Mobile</option></select><br><span>(no spaces or dashes)</span>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit" id="submit">submit</button><button type="reset">reset</button></td>
+            </tr>
+        </table>
+
+    </form>
+    <div id="data">
+
+    </div>
+<script src="../js/practicle8.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+input,select,textarea{
+    margin-left: 20px;
+}
+
+.one input{
+    margin-left: 20px;
+}
+form{
+    width: 700px;
+
+}

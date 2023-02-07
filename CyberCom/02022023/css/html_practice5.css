@@ -1,0 +1,19 @@
+table,td,th{
+    border: 1px solid black;
+}
+table{
+    border-collapse: collapse;
+    margin: 0 20%;
+}
+#one{
+    background: rgb(32, 249, 154);
+}
+.one{
+    background-color: #43D7DA;
+}
+.third{
+    background-color: #E3A0D2;
+}
+.four{
+    background-color: #F1FC48 ;
+}

@@ -1,0 +1,47 @@
+form{
+    border: 1px solid black;
+    width: 430px;
+    margin: auto;
+    background-color: #EAE6F0 ;
+}
+table{
+    padding: 20px;
+}
+span{
+
+    font-size: 10px;
+    margin-left: 20px;
+    margin-top: 0;
+}
+/* td{
+    text-align: right; 
+} */
+th{
+    text-align: left;
+}
+input,select{
+    margin-left: 20px;
+}
+.field input{
+    width: 80%;
+}
+.label{
+    text-align: right;
+   
+}
+#opt{
+    background-color: #fff;
+    border: 1px solid #D2D2D2;
+    padding: 5px;
+    font-size: 10px;
+    
+}
+
+button{
+    margin: 6px;
+}
+
+#msg{
+    color: red;
+    font-size: 30px;
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Care</title>
+    <link rel="stylesheet" href="../css/healthCare.css">
+</head>
+<body>
+    <header>
+        <h6>Information</h6>
+        <h1>Health Care Insurance <sup>+</sup></h1>
+        <p>Complete all answser in capital letters</p>
+    </header>
+    <main>
+        <form action="">
+            <fieldset>
+                <h3>EMPLOYEE STATEMENT</h3>
+                <P>
+                    Group Contract Number <input type="text" required> Certificate number <input type="text" required>
+                    Emplyoee Last name <input type="text"> Date of birth(DD/MM/YY) <input type="text" required>
+                    Emplyoee Address <input type="text" required>
+                </P>
+                <h5>
+                    Would you like your claims and payments deposited into your bank account?
+                </h5>
+                <input type="checkbox"> Yes | i have include a valid cheque.
+                <p>Please note that only a one time vaild cheque is require id you change your banking infomation a new void cheque will be needed.</p>
+            </fieldset>
+
+
+
+
+            <fieldset>
+                <h3>
+                    COORDINATION OF BENEFITS
+                </h3>
+                <ol>
+                    <li>
+                        <ul>
+                            <li>
+                                1. Does you're spouse and/or children have coverage inder any other medical plan or contract?
+                                <input type="radio" id="firstyes" name="option" onclick="firstShow()"> yes <input type="radio" name="option" onclick="firstRemove()" value="no" id="firstno" > No
+                            </li>
+                            <li class="first">
+                                If yes, spouse's date of birth?(DD/MM/YY) <input type="text" required>
+                            </li>
+                            <li class="first">
+                                Insurance company . policy number and certificate number <input type="text" name="" id="" required>
+                            </li>
+                        </ul>
+                        
+                    </li>
+
+                    <li>
+                        <ul>
+                            <li>
+                                2. Is any expense the result of an accifent?<br>
+                            <input type="radio" id="secondYes" name="secondOption" onclick="secondShow()">yes <input type="radio" id="secondNo" name="secondOption" onclick="secondRemove()"> No
+                            </li>
+                            <li class="second">
+                                    If yes,Date of accident <input type="text" name="" id="" required>
+                            </li>
+                            <li class="second">
+                                Location of accident <input type="checkbox" name="location" id="" required> Work <input type="checkbox" name="location" id="" required> Home <input type="checkbox" name="location" id="" required> Other 
+                            </li>
+                            <li class="second">
+                                Explain how  the accident occures <input type="text" required>
+
+                            </li>
+                        </ul>
+                    </li>
+                </ol>
+                
+              
+            </fieldset>
+
+        </form>
+
+    </main>
+
+    <section>
+        <h4>
+            DRUGS, VISION CARE, PARAMEDICAL SERVICES <br> AND OTHERS-PATIENT INFORMATION 
+        </h4>
+        <table id="dataTable">
+            <tr>
+                <th>
+                    Patient's name
+                </th>
+                <th>
+                    Date of birth
+                </th> 
+                <th>
+                    Relationship to plan member
+                </th>
+                <th>
+                    Total charge
+                </th>
+            </tr>
+            <tr>
+                <td><input type="text" name="" id=""></td>
+                <td><input type="date"></td>
+                <td><input type="text" name="" id=""></td>
+                <td><input type="number" name="" id=""></td>
+            </tr>
+           
+        </table>
+        <button onclick="addRow()">add </button>
+    </section>
+
+    <script src="../js/healthCare.js"></script>
+</body>
+</html>

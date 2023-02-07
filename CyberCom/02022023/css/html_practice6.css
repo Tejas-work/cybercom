@@ -1,0 +1,44 @@
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+.image{
+    background: url("501-200x300.jpg");
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+    
+}
+input,textarea{
+    width: 80%;
+    height: 50px;
+    margin-top: 10px;
+    border-color: rgba(0,0,0,0.2);
+    outline: none;
+    border-width: 1px;
+}
+textarea{
+    height: 100px;
+}
+
+input::placeholder,textarea::placeholder{
+    color: rgba(0,0,0,0.2);
+    font-family: "Font Awesome 6 Free"; 
+    font-weight: 200;
+    
+}
+button{
+    margin: 10px 0px;
+    padding: 10px 20px;
+    background-color: #8829EE;
+    color: #ffff;
+    border: 0;
+    border-radius: 20px;
+    box-shadow:  0px 0px 14px 0px rgba(136, 41, 238,0.75);
+}

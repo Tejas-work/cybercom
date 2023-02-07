@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+header,main,section{
+    width: 636px;
+    margin: auto;
+    margin-top: 10px;
+}
+
+h1,h3,h5,h4{
+    color: rgb(74, 187, 187);
+}
+
+h6{
+    font-size: 25px;
+    font-weight: 200px
+}
+fieldset{
+    border-color: rgb(74, 187, 187);
+    margin-top: 10px;
+    padding: 15px;
+}
+input[type=text]{
+    border: 0px;
+    border-bottom: 1px solid black ;
+
+}
+ol{
+    list-style: none;
+}
+ol li{
+    margin-top: 15px;
+}
+ul{
+    list-style: none;
+
+}
+ul li{
+    margin-top: 8px;
+}
+
+
+table,th,td{
+    border: 1px solid rgb(74, 187, 187);
+
+}
+table{
+    border-top: 3px solid rgb(74, 187, 187);
+}
+td,th{
+    padding: 5px;
+}
+
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.first{
+    display: none;
+}
+.second{
+    display: none;
+}

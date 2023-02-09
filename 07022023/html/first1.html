@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice1.1</title>
+    <style>
+        .cardGrp{
+            display: flex;
+        }
+        .card{
+            width: 200px;
+            height: 400px;
+            margin: 10px;
+
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>1</h1>
+    <p id="one">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Error, magnam molestias iure tempora reiciendis veritatis? Accusamus beatae vel inventore assumenda ipsam? Reiciendis ratione sed quis provident voluptas doloremque unde dolore.
+    </p>
+    <button id="oneBtn" onclick="changePara()">change text</button>
+
+    <h3>2</h3>
+    <ul id="second">
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+    <button id="add">Add</button>
+    <button id="remove">Remove</button>
+
+<h3>3</h3>
+    <p class="third">1.first para 1</p>
+    <p class="third">2.second para 2</p>
+    <p class="third">3.third para 3</p>
+    <button onclick="changeThird(this.id)" id="1">Change 1</button><button onclick="changeThird(this.id)" id="2">Change 2</button><button id="3" onclick="changeThird(this.id)">Change 3</button>
+
+    <!-- fourth -->
+    <h3>4</h3>
+    <form action="" name="myForm" onsubmit="return check()">
+        <label for="" >first name</label>
+        <input type="text" name="firstName" required>
+        <label for="">email</label>
+        <input type="text" name="email" required>
+        <label for="">password</label>
+        <input type="password" name="password" required> 
+        <label for="">phone</label>
+        <input type="text">
+        <span id="msg" style="color: red;font-size: 15px;"></span>
+        <button type="submit">submit</button>
+    </form>
+
+
+<!-- fifth -->
+
+    <dic class="cardGrp">
+        <div class="card">
+            <img src="../images/1202819.jpg" alt="">
+            <button id="1" onclick="changeImg(this.id)">Change</button>
+        </div>
+        <div class="card">
+            <img src="../images/1202819.jpg" alt="">
+            <button id="2" onclick="changeImg(this.id)">Change</button>
+        </div>
+        <div class="card">
+            <img src="../images/1202819.jpg" alt="">
+            <button id="3" onclick="changeImg(this.id)">Change</button>
+        </div>
+        <div class="card">
+            <img src="../images/1202819.jpg" alt="">
+            <button id="4" onclick="changeImg(this.id)">Change</button>
+        </div>
+    </dic>
+
+
+    <!-- script -->
+    <script src="../js/first1.js"></script>
+</body>
+</html>

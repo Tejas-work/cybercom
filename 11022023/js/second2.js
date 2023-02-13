@@ -34,40 +34,40 @@ let calculateBmi = () => {
   result.value = bgm;
 };
 
-let clearBMI = () =>{
- document.getElementById("height").value = '';
+let clearBMI = () => {
+  document.getElementById("height").value = '';
   document.getElementById("weight").value = '';
-  
+
 }
 
 
 //case three
 
-let strToCharArr = (str) =>{
-    return str.split('');
+let strToCharArr = (str) => {
+  return str.split('');
 }
 let str = "tejas";
 let arr = strToCharArr(str)
-document.getElementById('three').innerHTML=`string : ${str}<br> array = ${arr}`
+document.getElementById('three').innerHTML = `string : ${str}<br> array = ${arr}`
 
 //case 4
 
-function fnCalculateAge(){
+function fnCalculateAge() {
 
-    var userDateinput = document.getElementById("txtDOB").value;  
-    console.log(userDateinput);
-    
-    // convert user input value into date object
-    var birthDate = new Date(userDateinput);
-     console.log(" birthDate"+ birthDate);
-    
-    // get difference from current date;
-    var difference=Date.now() - birthDate.getTime(); 
-         console.log(Date.now(),birthDate.getTime(),difference)
-    var  ageDate = new Date(difference); 
-    console.log(ageDate);
-    var calculatedAge=   Math.abs(ageDate.getUTCFullYear() - 1970);
-    console.log(ageDate.getUTCFullYear());
+  var userDateinput = document.getElementById("txtDOB").value;
+  console.log(userDateinput);
 
-    alert(calculatedAge);
+  // convert user input value into date object
+  var birthDate = new Date(userDateinput);
+  console.log(" birthDate" + birthDate);
+
+  // get difference from current date;
+  var difference = Date.now() - birthDate.getTime();
+  console.log(Date.now(), birthDate.getTime(), difference)
+  var ageDate = new Date(difference);
+  console.log(ageDate);
+  var calculatedAge = Math.abs(ageDate.getUTCFullYear() - 1970);
+  console.log(ageDate.getUTCFullYear());
+
+  alert(calculatedAge);
 }

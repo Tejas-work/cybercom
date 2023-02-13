@@ -1,4 +1,4 @@
-let nums = [0];
+let nums = [0,1];
 
 
 // let subSet = (arr) =>{
@@ -22,14 +22,9 @@ while(n < nums.length){
                 part.push(nums[j]);
             }
 
-            // console.log(nums[j]);
-            // console.log(part);
+         
         }
-        
-        // console.log(" jj");
-        if(!ans.includes(part)){
-            ans.push(part)
-        }
+        ans.push(part)
         part = [];
     }
 
@@ -38,7 +33,7 @@ while(n < nums.length){
 
 
 
-const uniqueArrayOfArrays = [...new Set(ans.map(JSON.stringify))].map(JSON.parse);
+const uniqueArrayOfArrays = [...new Set(ans.map(x => JSON.stringify(x)))].map(JSON.parse);
 
 
 

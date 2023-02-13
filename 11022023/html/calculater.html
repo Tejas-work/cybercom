@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2.2</title>
+    <link rel="stylesheet" href="../css/calculater.css">
+</head>
+<body>
+    <div class="main">
+        <h1>case 1</h1>
+        <div class="grid-container">
+            <input type="text" id="inp" value="" >
+            <button value="1" onclick="btnValue(this.value)">1</button>
+            <button value="2" onclick="btnValue(this.value)">2</button>
+            <button value="3" onclick="btnValue(this.value)">3</button>
+
+            <button value="4" onclick="btnValue(this.value)"> 4</button>
+            <button value="5" onclick="btnValue(this.value)"> 5</button>
+            <button value="6" onclick="btnValue(this.value)">6</button>
+ 
+        
+            <button value="7" onclick="btnValue(this.value)">7</button>
+            <button value="8" onclick="btnValue(this.value)">8</button>
+            <button value="9" onclick="btnValue(this.value)">9</button>
+            <div>&nbsp;</div>
+            <button value="1" onclick="btnValue(this.value)">0</button>
+            <div>&nbsp;</div>
+            <button value="+" onclick="btnValue(this.value)">+</button>
+            <button value="-" onclick="btnValue(this.value)">-</button>
+            <button value="*" onclick="btnValue(this.value)">*</button>
+            <button value="/" onclick="btnValue(this.value)">/</button>
+            <button id="clear" onclick="earse()">clear</button>
+            <div>&nbsp;</div>
+            <button id="ans" value="" onClick="calculate()">=</button>
+            <div>&nbsp;</div>
+        </div>
+        
+    </div>
+    <h1>case 2</h1>
+    <div class="grid-container">
+        <input type="text" id="height" value="" placeholder="Height (meter)" > <input type="number" id="weight" placeholder="weight (kg)"> <input type="number" id="result">
+        <div>&nbsp;</div>
+        <button id="clear" onclick="clearBMI()">clear</button>
+        <div>&nbsp;</div>
+        <button id="ans" value="" onClick="calculateBmi()">BGM</button>
+        <div>&nbsp;</div>
+    </div>
+
+    <h1>case 3</h1>
+    <div id="three"></div>
+
+    <h4>case 4</h4>
+    <input type="date" id="txtDOB" /> 
+<button id="btnCalculate"  onclick="fnCalculateAge();" >Calculate Age</button>
+    <script src="../js/second2.js "></script>
+</body>
+</html>

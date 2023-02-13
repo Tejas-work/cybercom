@@ -1,6 +1,9 @@
 //first 
 let palidrome = (str) =>{
 let len = str.length;
+
+let revstr = str.reverse();
+console.log(revstr);
 let i = 0;
 ans = ""
 while(i<len){
@@ -17,6 +20,7 @@ console.log(ans);
 return ans;
 };
 
+palidrome("dgt")
 
 
 //second

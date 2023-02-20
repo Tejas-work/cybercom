@@ -1,0 +1,33 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px auto;
+    border: 1px solid black;
+    height: 100vh;
+}
+
+.sidebar {
+    background-color: #D35813 ;
+    padding: 20px;
+}
+
+.profile{
+    margin-bottom: 50px;
+    color: white;
+}
+
+.item{
+    margin-top: 20px;
+    color: white;
+}
+.main{
+    padding: 20px;
+    
+}

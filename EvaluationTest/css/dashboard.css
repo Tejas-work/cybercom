@@ -1,0 +1,25 @@
+
+.card-group{
+    display: flex;
+   padding: 20px;
+    
+
+}
+
+.card{
+    border: 1px solid black;
+    text-align: center;
+    margin: 20px;
+    background-color: #D35813;
+    color: white;
+}
+.condition{
+    font-size: 15px;
+    font-weight: 900;
+    padding: 15px 30px;
+}
+
+.count{
+    font-size: 25px;
+    padding: 20px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/dashboard.css">
+</head>
+<body>
+    <div class="grid-container">
+        <div class="sidebar">
+            <div class="profile">
+                Hello <span id="userName">Tejas</span>
+            </div>
+            
+        </div>
+        <div class="main">
+           
+            
+            <h2>Dashboard</h2>
+            <div class="card-group">
+                <div class="card">
+                    <p class="condition">Users < 18 years</p>
+                    <p  id="eighteenBelow" class="count">12 Users</p>
+                </div>
+                <div class="card">
+                    <p class="condition">18 - 50 years Users</p>
+                    <p id="eighteenToFifty" class="count">12 Users</p>
+                </div>
+                <div class="card">
+                    <p class="condition">Users > 15 years</p>
+                    <p id="FiftyAbove" class="count">12 Users</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="../js/dashboard.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/sidebar.js"></script>
+    <script src="../js/board.js"></script>
+</body>
+</html>

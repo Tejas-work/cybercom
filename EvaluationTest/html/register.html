@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="../css/register.css">
+</head>
+<body>
+    <form action="../html/login.html" name="registerForm" onsubmit="validation()">
+        <input type="text" name="name" placeholder="name" id="">
+        
+        <input type="email" name="email" placeholder="Email" id="">
+
+        <input type="password" name="password" placeholder="Password" id="">
+  
+        <input type="password" name="reEnterPassword" placeholder= "Re-Enter Password" id="">
+   
+        <select name="city" id="">
+            <option value="surat">Surat</option>
+            <option value="rajkot">Rajkot</option>
+            <option value="ahmedabad">Ahmedabad</option>
+        </select>
+
+        <select name="state" id="">
+            <option value="gujarat">Gujarat</option>
+            <option value="delhi">Delhi</option>
+            <option value="goa">Goa</option>
+        </select>
+
+        <div><input type="checkbox" name="condition" value="check"> Terms & Conditions
+       </div>
+    </form>
+    <span id="msg"></span>
+    <button type="submit" onclick="return validation()" id="submit"><a href="login.html">Register</a></button>
+
+    <script src="../js/register.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

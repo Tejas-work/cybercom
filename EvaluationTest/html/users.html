@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users</title>
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/users.css">
+    
+</head>
+<body>
+    <div class="grid-container">
+        <div class="sidebar">
+            <div class="profile">
+                Hello <span id="userName">Tejas</span>
+            </div>
+        </div>
+        <div class="main">
+            <h2>Add User</h2>
+            <div class="form">
+                <form action="" name="userForm" onsubmit="return validation()">
+                    <input type="text" name="name" id="" placeholder="Name"><input type="text" name="email" id="" placeholder="Email">
+                    <input type="password" name="password" id="" placeholder="Password"><input type="date" name="birthday" id="" placeholder="Birthday">
+                    <span id="msg"></span>
+                    <!-- <input type="button" value="Add User" id="btn" onclick="validation()"> -->
+                    <button type="submit" id="btn">Add</button>
+                </form>
+            </div>
+
+            <table id="data">
+                <tr>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Password</th>
+                    <th>Birthdate</th>
+                    <th>Age</th>
+                    <th>Action</th>
+                </tr>
+            </table>
+            
+        </div>
+    </div>
+    <script src="../js/users.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/sidebar.js"></script>
+</body>
+</html>

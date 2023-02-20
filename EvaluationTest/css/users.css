@@ -1,0 +1,28 @@
+form{
+    text-align: left;
+}
+
+input{
+    width: 150px;
+    height: 25px;
+    margin: 20px;
+}
+input[type = button]{
+    background-color: #D35813;
+    color: white;
+}
+
+span.msg{
+    color: red;
+    font-size: 20px;
+}
+
+table {
+    border: 1px solid black;
+    width: 100%;
+}
+
+th{
+    background-color: black;
+    color: white;
+}

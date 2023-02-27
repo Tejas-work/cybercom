@@ -81,7 +81,7 @@ SELECT
     *
 FROM
     Cars
-ORDER BY Price
+ORDER BY Price desc
 LIMIT 10;
 
 

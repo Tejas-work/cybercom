@@ -1,0 +1,19 @@
+
+<section>
+
+  <div class="main">
+    <div class="left">
+      <img src="assets/dummy.jpg" alt="" srcset="">
+    </div>
+    <div class="right" *ngIf="product">
+      <span class="name">{{ product.name }}</span>
+        <span>{{product.gender}}</span>
+        <span class="price">{{ product.price | currency }}</span>
+        <div class="color"><div class="circle" *ngFor="let color of product?.colors" [ngStyle]="{'background-color':color}"></div></div>
+        <span class="cla">☆☆☆☆☆</span>
+        <input type="number" name="" id="" value="1" #qty>
+        <button (click)="getDetails(qty.value,product)">Add cart</button>
+
+    </div>
+  </div>
+  </section>

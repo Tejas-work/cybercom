@@ -1,0 +1,8 @@
+<p>let works!</p>
+
+<h1>
+  {{item}}
+</h1>
+<button (click)="childEvent()">try</button>
+<input type="text" (keyup)="check($event)" [value]= "imageUrl">
+<img [src]="imageUrl" alt="">

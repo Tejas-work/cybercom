@@ -1,0 +1,49 @@
+section{
+  margin-top: 50px;
+  border: 0;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+  background-color: transparent;
+}
+
+.categories{
+  margin-top: 30px;
+  margin-bottom: 40px;
+}
+.category
+{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+
+
+
+.items{
+  display: flex;
+  height: 100px;
+  padding: 15px 0px;
+  border-bottom: 1px solid #DBDADA;
+}
+
+img{
+  height: 100%;
+}
+.details{
+   display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 20px;
+  font-size: 12px;
+}
+
+
+
+span{
+  margin-bottom: 3px;
+}

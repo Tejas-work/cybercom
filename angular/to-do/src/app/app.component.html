@@ -1,0 +1,15 @@
+<input #task type="text" />
+<button (click) = 'getTask(task.value,category.value)'>Add</button>
+<select name="category" #category>
+  <option  *ngFor = 'let item of priority' [value]="item">{{item | uppercase}}</option>
+</select>
+
+
+<div *ngIf="taskArr.length">
+  <h1  *ngFor = 'let item of taskArr' [ngClass]=item.category>{{item.task}}</h1>
+</div>
+
+
+
+<input type="text" (keyup)="check($event)" [value]= "imageUrl">
+<img [src]="imageUrl" alt="">

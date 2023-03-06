@@ -1,0 +1,20 @@
+<header>
+  <div class="left">
+    <div class="brand">
+     <a href="">
+      <img src="assets/logo1.png" alt="Bootstrap">
+     </a>
+    </div>
+    <div class="items">
+      <a [routerLink]="['/products-category']">EVERYTHING</a>
+      <a [routerLink]="['/products-category','women']">WOMEN</a>
+      <a [routerLink]="['/products-category','men']">MEN</a>
+      <a [routerLink]="['/products-category','accessories']">ACCESSORIES</a>
+    </div>
+  </div>
+  <div class="righ">
+    <a [routerLink]="['/about']">ABOUT</a>
+    <a [routerLink]="['/contact']">CONTACT US</a>
+    <a href="" id="cart" [routerLink]="['cart']">$0.00</a>
+  </div>
+  </header>

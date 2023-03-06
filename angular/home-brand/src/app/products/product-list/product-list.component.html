@@ -1,0 +1,21 @@
+
+<section>
+  <header>
+    <h1>{{productCategory | titlecase}}
+    </h1>
+    <span>{{products.length}}</span>
+  </header>
+  <div id="container">
+    <div id="card" *ngFor="let product of products" (click)="productDetails(product.id)">
+      <img [src]="product.src" alt="">
+     <div class="details">
+      <span class="name">{{ product.name }}</span>
+
+      <span>{{productCategory}}</span>
+      <span class="price">{{ product.price | currency }}</span>
+      <div class="color"><div class="circle" *ngFor="let color of product.colors" [ngStyle]="{'background-color':color}"></div></div>
+      <span class="cla">☆☆☆☆☆</span>
+     </div>
+    </div>
+  </div>
+</section>

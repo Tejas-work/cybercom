@@ -1,0 +1,55 @@
+section{
+    margin-top: 50px;
+    background-color: #f8f9fa;
+    padding: 1.5em 2.14em;
+}
+#container{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+
+}
+
+
+#card{
+  width: 195px;
+  height: 370px;
+  margin-bottom: 10px;
+}
+img{
+  width: 100%;
+}
+.details{
+   display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+
+
+
+.name
+{
+  font-weight: 700;
+}
+
+.price
+{
+font-weight: 500;
+}
+
+span{
+  margin-bottom: 10px;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.color{
+  display: flex;
+}
+

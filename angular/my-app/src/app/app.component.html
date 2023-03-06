@@ -1,0 +1,11 @@
+<app-first-component></app-first-component>
+<h1 [class]= "hii">welcome bro</h1>
+<table [style]="color" >
+  <tr *ngFor = "let i of user">
+    <td [style]="color" [colSpan]="1+1">{{i.name}}</td>
+    <td [style]="color" >{{i.age}}</td>
+  </tr>
+</table>
+
+
+

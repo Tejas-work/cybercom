@@ -1,0 +1,33 @@
+<form [formGroup]="ipForm" (ngSubmit)="onSubmit()">
+  <div class="form-group">
+    <label for="ipAddress">IP Address</label>
+    <input type="text" id="ipAddress" formControlName="ipAddress" class="form-control">
+  </div>
+  <button type="submit" class="btn btn-primary">Lookup</button>
+</form>
+<div *ngIf="ipInfo">
+  <h2>IP Information</h2>
+  <table class="table">
+    <tr>
+      <td>IP Address:</td>
+      <td>{{ ipInfo.ip }}</td>
+    </tr>
+    <tr>
+      <td>City:</td>
+      <td>{{ ipInfo.city }}</td>
+    </tr>
+    <tr>
+      <td>Region:</td>
+      <td>{{ ipInfo.region }}</td>
+    </tr>
+    <tr>
+      <td>Country:</td>
+      <td>{{ ipInfo.country }}</td>
+    </tr>
+    <tr>
+      <td>Latitude, Longitude:</td>
+      <td>{{ ipInfo.loc }}</td>
+    </tr>
+  </table>
+
+</div>

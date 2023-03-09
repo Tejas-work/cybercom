@@ -1,0 +1,9 @@
+
+<asl-google-signin-button type='icon' size='medium' ></asl-google-signin-button>
+<app-login></app-login>
+<div *ngIf="user">
+  <h4>{{ user | json}}</h4>
+  <p>{{ user.email }}</p>
+</div>
+<app-dashbord></app-dashbord>
+<router-outlet></router-outlet>

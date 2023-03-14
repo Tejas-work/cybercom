@@ -1,0 +1,9 @@
+@import '~swiper/swiper.css';
+
+#card
+{
+  width: 153px;
+  height: 194px;
+  margin: 20px;
+  border: 1ps solid black;
+}

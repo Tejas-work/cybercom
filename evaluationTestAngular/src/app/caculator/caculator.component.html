@@ -1,0 +1,53 @@
+
+<label for="">Loan Amount is</label>
+<input type="range" #Amount  name="" id="" min="100000" max="5000000" (change)="getLoanAmount(Amount.value)">
+{{loanAmount}}
+<input type="range" #months  name="" id="" min="120" max="360" (change)="getMonths(months.value)">
+{{months.value}}
+<input type="range" #rate name="" id="" min="8" max="16" step="0.1" (change)="getRate(rate.value)">
+
+{{rate.value}}
+
+
+<div>
+  <h6>Monthly EMI</h6>
+  {{Emi}}
+</div>
+<div>
+  <h6>Total Interest</h6>
+{{getTotalInterest()}}
+</div>
+<div>
+  <h6>Payable Amount</h6>
+  {{getPayableAmount()}}
+</div>
+<div>
+  <h6>Interest Percentage</h6>
+  {{getInterestPercentage()}}
+</div>
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Id</th>
+      <th>Beginning Balance</th>
+      <th>EMI</th>
+      <th>Principal</th>
+      <th>Interest</th>
+      <th>Ending Balance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tableData">
+      <td>{{item.id}}</td>
+      <td>{{ item.beginningBalance }}</td>
+      <td>{{ item.emi }}</td>
+      <td>{{ item.principle }}</td>
+      <td>{{ item.interest }}</td>
+      <td>{{ item.endingBalance }}</td>
+    </tr>
+  </tbody>
+</table>
+
+

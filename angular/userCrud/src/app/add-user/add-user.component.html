@@ -1,0 +1,9 @@
+<form [formGroup]="addForm" name="addForm">
+  <label for="name">Name</label>
+  <input type="text" name="name" id="name" formControlName="name"><br/>
+  <label for="email">email</label>
+  <input type="email" name="email" id="email" formControlName="email"><br/>
+  <ng-container *ngIf="!userId"><button type="submit" [disabled]="addForm.invalid" (click)="onSubmit()">Submit</button></ng-container>
+  <ng-container *ngIf="userId"><button type="submit" [disabled]="addForm.invalid" (click)="update(userId)">Update</button></ng-container>
+</form>
+

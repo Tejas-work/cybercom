@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { EventManager } from '@angular/platform-browser';
+import { OpService } from '../op.service';
 
 @Component({
   selector: 'app-let',
@@ -7,38 +8,47 @@ import { EventManager } from '@angular/platform-browser';
   styleUrls: ['./let.component.css']
 })
 export class LetComponent {
-  @Input() item = '';
-  @Output() forParent = new EventEmitter();
-  public imageUrl = "https://picsum.photos/id/237/200/300";
+  userName:any;
+  // @Input() item = '';
+  // @Output() forParent = new EventEmitter();
+  // public imageUrl = "https://picsum.photos/id/237/200/300";
 
-  check(e: KeyboardEvent) {
-    this.imageUrl = (e.target as HTMLInputElement).value;
-  }
-  childEvent(){
-    this.forParent.emit('from child');
-  }
-  constructor(){
-    console.log('this is constructor',this.imageUrl);
-  }
-  ngOnInit(){
-    console.log('this is ngOnit',this.imageUrl);
-  }
-  ngOnChanges(){
-    console.log('this is ngOnChanges',this.imageUrl);
-  }
-  ngDoCheck(){
-    console.log('this is ngDoCheck',this.imageUrl);
-  }
-  ngAfterContentInit(): void {
-    console.log('this is ngAfterContentInit',this.imageUrl);
-  }
-  ngAfterContentChecked(): void {
-    console.log('this is ngAfterContentChecked',this.imageUrl);
-  }
-  ngAfterViewInit(): void {
-    console.log('this is ngAfterViewInit',this.imageUrl);
-  }
-  ngAfterViewChecked(): void {
-    console.log('this is ngAfterViewChecked',this.imageUrl);
-  }
+  // check(e: KeyboardEvent) {
+  //   this.imageUrl = (e.target as HTMLInputElement).value;
+  // }
+  // childEvent(){
+  //   this.forParent.emit('from child');
+  // }
+  constructor(private userService: OpService) {
+    this.userService.getUserName().subscribe(res=>{
+
+      this.userName=res;
+    });
+
+  };
+
+  // constructor(){
+  //   console.log('this is constructor',this.imageUrl);
+  // }
+  // ngOnInit(){
+  //   console.log('this is ngOnit',this.imageUrl);
+  // }
+  // ngOnChanges(){
+  //   console.log('this is ngOnChanges',this.imageUrl);
+  // }
+  // ngDoCheck(){
+  //   console.log('this is ngDoCheck',this.imageUrl);
+  // }
+  // ngAfterContentInit(): void {
+  //   console.log('this is ngAfterContentInit',this.imageUrl);
+  // }
+  // ngAfterContentChecked(): void {
+  //   console.log('this is ngAfterContentChecked',this.imageUrl);
+  // }
+  // ngAfterViewInit(): void {
+  //   console.log('this is ngAfterViewInit',this.imageUrl);
+  // }
+  // ngAfterViewChecked(): void {
+  //   console.log('this is ngAfterViewChecked',this.imageUrl);
+  // }
 }

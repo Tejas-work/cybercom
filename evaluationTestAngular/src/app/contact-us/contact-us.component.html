@@ -1,0 +1,59 @@
+<section>
+  <div class="title">
+    <h1>Get In Touch</h1>
+    <p>Reach out to us & we will respond as soon as we can.</p>
+  </div>
+  <form [formGroup]="myForm">
+  <div class="row">
+    <div class="col">
+
+    <input type="text" formControlName="name" placeholder="Name">
+    <div *ngIf="name!.invalid && name!.touched">
+      <small [style.display]="name?.errors?.['required']">
+        Please enter name
+      </small>
+    </div>
+    </div>
+
+    <div class="col">
+
+    <input type="text" formControlName="email" placeholder="email">
+    <div *ngIf="email!.invalid && email!.touched">
+      <small [class.error]="email?.errors?.['required']">
+        Please enter email
+      </small>
+    </div>
+    </div>
+
+    <div class="col">
+
+    <input type="number" formControlName="phone" placeholder="Phone">
+    <div *ngIf="phone!.invalid && phone!.touched">
+      <small [class.error]="phone?.errors?.['required']">
+        Please enter phone number
+      </small>
+      <div class="" *ngIf="!phone?.errors?.['required']">
+        <small [class.error]="phone?.errors?.['minlength']">
+          Phone number must be at least 10 characters long
+        </small>
+        <small [class.error]="phone?.errors?.['maxlength']">
+          Phone number must not exceed 10 characters
+        </small>
+      </div>
+    </div>
+    </div>
+  </div>
+
+    <div class="row">
+
+    <textarea formControlName="message" placeholder="Message"></textarea>
+    <div *ngIf="message!.invalid && message!.touched">
+      <small [class.error]="message?.errors?.['required']">
+        Please enter message
+      </small>
+    </div>
+
+    </div>
+    <button type="submit" [disabled]="myForm.invalid">Submit</button>
+  </form>
+</section>

@@ -1,0 +1,19 @@
+.error{
+  color: red;
+}
+input
+{
+  width: 200px;
+}
+
+table,td,th
+{
+  border: 1px solid black;
+}
+table{
+  border-collapse: collapse;
+}
+
+td{
+  padding: 10px;
+}

@@ -6,8 +6,7 @@ import { LetComponent } from '../let/let.component';
 
 @NgModule({
   declarations: [
-    HowComponent,
-    LetComponent
+    HowComponent
   ],
   imports: [
     CommonModule

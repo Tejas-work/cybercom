@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import 'bootstrap';
+import { NguCarouselModule } from '@ngu/carousel';
 import { AppRoutingModule } from './app-routing.module';
 import {FormsModule } from '@angular/forms';
 import { AppComponent } from './app.component';
@@ -8,7 +9,7 @@ import { LetComponent } from './let/let.component';
 import { UserComponent } from './user/user.component';
 import { WhenComponent } from './when/when.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
-import { HowComponent } from './what/how/how.component';
+import { CustomPipe } from './pipe/custom.pipe';
 
 @NgModule({
   declarations: [
@@ -17,12 +18,13 @@ import { HowComponent } from './what/how/how.component';
     UserComponent,
     WhenComponent,
     SignUpComponent,
-    HowComponent
+    CustomPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    NguCarouselModule
 
   ],
   providers: [],

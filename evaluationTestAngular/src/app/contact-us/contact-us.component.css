@@ -1,0 +1,56 @@
+section{
+
+  margin-top: 30px;
+  width: 1140px;
+height: 165px;
+
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  background-color: white;
+}
+
+.row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+
+}
+
+.col{
+  width: 100%;
+  text-align: center;
+  margin-right: 20px;
+
+}
+
+input, textarea
+{
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+  height: 48px;
+  width: 100%;
+}
+input::placeholder,textarea::placeholder{
+  color: #dee2e6;
+}
+form{
+  padding: 100px;
+}
+
+textarea{
+  height: 130px;
+}
+button{
+  background-color: #624bff;
+  color: white;
+  padding:10px 15px;
+  border: 0px;
+  font-size: 0.875rem;
+  border-radius: 10px;
+}

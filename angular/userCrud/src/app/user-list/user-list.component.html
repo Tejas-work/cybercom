@@ -1,3 +1,4 @@
+<button (click)="addForm()">Add</button>
 <table>
   <tr>
     <th>
@@ -12,12 +13,21 @@
     </th>
   </tr>
 
+
   <tr *ngFor="let user of usersData">
 
     <td>{{user.id}}</td>
     <td>{{user.name}}</td>
     <td>{{user.email}}</td>
-    <td><button><a [routerLink]="['add',user.id]">Edit</a></button></td>
-    <td><button (click)="deleteUser(user.id)">Delete</button></td>
+    <ng-container *ngIf="user.id">
+      <td (click)="editUser(user.id)"><button>Edit</button></td>
+      <td><button (click)="deleteUser(user.id)">Delete</button></td>
+    </ng-container>
+
   </tr>
+
+
+
 </table>
+
+<a routerLink="/op"></a>

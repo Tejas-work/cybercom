@@ -1,46 +1,6 @@
 {
-  "users": [
-    {
-      "id": "qw",
-      "cart": [
-        {
-          "id": 3,
-          "product_id": 3,
-          "product_name": "product-3",
-          "qty": 1,
-          "product_amount": 70,
-          "discount_type": 1,
-          "discount_amount": 0,
-          "category": "category-4",
-          "subtotal": 70
-        },
-        {
-          "id": 10,
-          "product_id": 10,
-          "product_name": "product-10",
-          "qty": 1,
-          "product_amount": 110,
-          "discount_type": 1,
-          "discount_amount": 0,
-          "category": "category-4",
-          "subtotal": 110
-        }
-      ]
-    }
-  ],
-  "cartItems": [
-    {
-      "id": 10,
-      "product_id": 10,
-      "product_name": "product-10",
-      "qty": 1,
-      "product_amount": 110,
-      "discount_type": 1,
-      "discount_amount": 0,
-      "category": "category-4",
-      "subtotal": 110
-    }
-  ],
+  "users": [],
+  "cartItems": [],
   "groceries": [
     {
       "id": 1,

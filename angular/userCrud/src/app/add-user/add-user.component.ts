@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { UserService } from '../user.service';
 import { ActivatedRoute, Router } from '@angular/router';
-
+import { User } from '../models/user.model';
 @Component({
   selector: 'app-add-user',
   templateUrl: './add-user.component.html',
@@ -11,7 +11,7 @@ import { ActivatedRoute, Router } from '@angular/router';
 export class AddUserComponent {
 
   addForm!: FormGroup;
-  userId:any;
+  userId:String ='';
 
   constructor(private fb: FormBuilder,private route:ActivatedRoute, private userService: UserService,private router:Router) {
     this.addForm = this.fb.group({
@@ -28,7 +28,7 @@ export class AddUserComponent {
 
     if (this.userId) {
       this.getUser(this.userId);
-    } 
+    }
   }
 
 
@@ -55,7 +55,7 @@ export class AddUserComponent {
     let formValues = this.addForm.getRawValue();
     console.log(formValues);
 
-    const userBody = {
+    const userBody:User = {
       name: formValues.name || '',
       email: formValues.email || ''
     }
@@ -73,11 +73,11 @@ export class AddUserComponent {
       });
   }
 
-  update(id:any){
+  update(id:String){
     let formValues = this.addForm.getRawValue();
     console.log(formValues);
 
-    const userBody = {
+    const userBody:User = {
       name: formValues.name || '',
       email: formValues.email || ''
     }

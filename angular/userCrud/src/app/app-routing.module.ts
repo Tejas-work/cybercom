@@ -5,16 +5,26 @@ import { UserListComponent } from './user-list/user-list.component';
 
 const routes: Routes = [
   {
-    path:'add',
+    path:'',
     component:AddUserComponent
+
+  },
+  {
+    path:'add',
+    component:AddUserComponent,
+    pathMatch:'prefix'
   },{
-    path:'user-list/add/:id',
+    path:'add/:id',
     component:AddUserComponent
 
   },
   {
     path:'user-list',
     component:UserListComponent
+  },
+  {
+    path:'**',
+    component:AddUserComponent
   }
 ];
 
